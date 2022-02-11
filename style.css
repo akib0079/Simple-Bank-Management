@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.logIn {
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginInner {
+  display: block;
+  max-width: 1150px !important;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.formInner {
+  padding: 50px;
+  margin-top: -60px;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.formInner h2 {
+  font-weight: 600;
+  font-size: 35px;
+  color: #000;
+}
+
+.formInner h2 span {
+  color: #305dff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btnSubmit {
+  padding: 10px 20px;
+  border: none;
+  background-color: #305dff;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btnSubmit:hover {
+  background-color: #1e3ca8;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: 50px !important;
+  line-height: 1.25;
+}
+
+.form-floating > .form-control {
+  border-radius: 5px !important;
+}
+
+.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 12px !important;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.alert {
+  position: absolute !important;
+  top: 10%;
+}
+
+/* bank page start here */
+
+.welcomeHeader {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.welcomeHeader span {
+  color: #305dff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.account {
+  padding: 50px 0px;
+}
+
+.logo1 {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.logoutBtn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #305dff;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logoutBtn:hover {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1f4be7;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logoutBtn i {
+  vertical-align: middle;
+  font-size: 25px;
+}
+
+.statusInner1 {
+  background-color: #4e74fd;
+  color: white;
+  border-radius: 10px !important;
+  padding: 30px;
+}
+
+.statusInner2 {
+  background-color: #eb002bbb;
+  color: white;
+  border-radius: 10px !important;
+  padding: 30px;
+}
+
+.statusInner3 {
+  background-color: #00c486;
+  color: white;
+  border-radius: 10px !important;
+  padding: 30px;
+}
+
+.depositInput {
+  padding: 40px 30px 30px 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.withdrawInput {
+  padding: 40px 30px 30px 30px;
+  border-radius: 5px;
+}
+
+.depositInput h4 {
+  font-weight: 600;
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.withdrawInput h4 {
+  font-weight: 600;
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.btnSubmit1 {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0aaa77;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: -12px !important;
+}
+
+.btnSubmit2 {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f04464;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: -12px !important;
+}
+
+.info {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.308);
+}
+
+.label {
+  font-weight: 600;
+  color: rgb(143, 143, 143);
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .logIn {
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formInner {
+    padding: 10px;
+    margin-top: -60px;
+  }
+
+  .withdrawInput {
+    padding: 40px 30px 30px 30px;
+    border-radius: 5px;
+    margin: 31px 0px;
+  }
+
+  .statusInner1 {
+    padding: 17px;
+  }
+  .statusInner2 {
+    padding: 17px;
+  }
+  .statusInner3 {
+    padding: 17px;
+  }
+}

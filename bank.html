@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Banking Management</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- css connect -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Bootstrap CSS v5.0.2 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- BOX ICON CONNECTED -->
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+</head>
+<body>
+    
+<section class="account">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <img class="img-fluid logo1" src="image/android-chrome-256x256.png" alt="">
+              <h2 class="welcomeHeader text-center">Welcome to <span>BlueBank</span>.</h2>
+              <a href="index.html" class="logoutBtn">LogOut <i class='bx bx-log-out-circle'></i></a>
+          </div>
+      </div>
+    </div>
+</section>
+
+<section class="bankStatus">
+    <div class="container">
+        <div class="row gx-3">
+            <div class="col-md-4">
+                <div class="statusInner1 rounded">
+                    <h3>Deposit</h3>
+                    <h1>$<span id="depositBalance">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="statusInner2 rounded">
+                    <h3>Withdraw</h3>
+                    <h1>$<span id="withdrawBalance">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="statusInner3 rounded">
+                    <h3>Balance</h3>
+                    <h1>$<span id="totalBalance">1240</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="input mt-5">
+    <div class="container">
+        <div class="row gx-4">
+
+            <!-- deposit div here -->
+
+            <div class="col-md-6">
+                <div class="depositInput shadow">
+                    <h4>Please Deposit amount from here.</h4>
+                    <form onsubmit="return false" class="mt-1">
+                        <div class="form-floating mb-4">
+                          <input type="number" class="form-control" id="depositField" placeholder="Deposit">
+                          <label class="label" for="floatingInput">$ DEPOSIT AMOUNT</label>
+                          <p class="info">Please deposit your amount from here.</p>
+                        </div>
+                        <button id="depositBtn" class="btnSubmit1">Deposit <i class='bx bxs-wallet bx-flip-vertical'></i></button>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <!-- withdraw div here -->
+
+            <div class="col-md-6">
+                <div class="withdrawInput shadow">
+                    <h4>Please withdraw amount from here.</h4>
+                    <form onsubmit="return false" class="mt-1">
+                        <div class="form-floating mb-4">
+                          <input type="number" class="form-control" id="WithdrawField" placeholder="Withdraw">
+                          <label class="label" for="floatingInput">$ WITHDRAW AMOUNT</label>
+                          <p class="info">Please withdraw your amount from here.</p>
+                        </div>
+                        <button id="withdrawBtn" class="btnSubmit2">Withdraw <i class='bx bxs-bank' ></i></button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- script linked here -->
+<script src="bank.js"></script>
+
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
